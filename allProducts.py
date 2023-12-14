@@ -29,6 +29,6 @@ for i in range(47):
         page_products.append(information) #append in page products
 
     page_products = page_products[:len(page_products)//3:] #appended thrice for some reason so slice out
-    all_products.add(page_products) #add in cumilative list
+    all_products.extend(page_products) #add in cumilative list
 
 print(all_products)
